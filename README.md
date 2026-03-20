@@ -21,21 +21,29 @@ Request:
 
 Rocchio Formula:
 - i-th word in j-th document weight:
+
 $$
 w_{ij} = tf_{ij} * idf_{ij}
 $$
+
 - Centroid
+
 $$
 \vec{c_i} = <f_{1i},...,f_{|\tau|i}>
 $$
+
 - i-th centroid's k-th feature
+
 $$
 f_{ki} = \beta\sum_{\vec{d}_j \in POS_i} \frac{w_{kj}}{|POS_i|}- \gamma \sum_{\vec{d}_j \in NEG_i} \frac{w_{kj}}{|NEG_i|}
 $$
+
 where:
+
 $$
 POS = \{ d_j \in Documents | \phi(d_j,c_i) = True\}
 $$
+
 $$
 NEG = \{ d_j \in Documents  | \phi(d_j,c_i) = False\}
 $$
@@ -70,14 +78,21 @@ To do so we chose the following languages and accessed their synsets via BabelNe
 - Romanian
 
 For each word in each language we obtain the related synsetsIDs and, starting from their intersection, we evaluare the amount of ambiguity reduction using the following formula:
+
 $$
 \text{AmbiguityReduction} = \frac{\sum_{i=1}^N |\mathcal{S}_i| - N \cdot \left|\bigcap_{i=1}^N \mathcal{S}_i\right|}{\sum_{i=1}^N |\mathcal{S}_i|}
 $$
 
 where:
 
-$$ |\bigcap_{i=1}^N \mathcal{S}_i| \cdot N $$
+$$ 
+|\bigcap_{i=1}^N \mathcal{S}_i| \cdot N 
+$$
 
 are the senses shared amongst languages and
 
-$$ \sum_{i=1}^N |\mathcal{S}_i| $$ is the totality of senses amongst the languages.
+$$ 
+\sum_{i=1}^N |\mathcal{S}_i| 
+$$
+
+is the totality of senses amongst the languages.
