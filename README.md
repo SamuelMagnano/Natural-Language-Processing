@@ -39,11 +39,11 @@ $$
 where:
 
 $$
-POS = {d_j \in Documents | \phi(d_j,c_i) = True}
+POS = \{d_j \in Documents | \phi(d_j,c_i) = True\}
 $$
 
 $$
-NEG = \{ d_j \in Documents  | \phi(d_j,c_i) = False\}
+NEG = \{d_j \in Documents  | \phi(d_j,c_i) = False\}
 $$
 
 ## 3. Topic Modeling and Document Clustering
