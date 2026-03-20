@@ -28,11 +28,7 @@ $$
 
 - Centroid
 
-$$
-
-\vec{c_i} = <f_{1i},...,f_{|\tau|i}>
-
-$$
+$$\vec{c_i} = <f_{1i},...,f_{|\tau|i}>$$
 
 - i-th centroid's k-th feature
 
