@@ -39,7 +39,7 @@ $$
 where:
 
 $$
-POS = \{ d_j \in Documents | \phi(d_j,c_i) = True\}
+POS = {d_j \in Documents | \phi(d_j,c_i) = True}
 $$
 
 $$
